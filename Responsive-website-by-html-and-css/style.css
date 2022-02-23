@@ -1,0 +1,245 @@
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#3A3A3A;
+    margin-top: 87px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+}
+ main{
+    margin-left: 120px;
+    margin-right: 120px;
+    }
+
+header{
+    margin-bottom: 100px;
+    margin-left:120px ;
+}
+.container{
+    width:1100px;
+    margin-bottom:150px ;
+}
+/* Top part */
+.flexible{
+    display: flex;
+}
+.top-part-info{
+width: 60%;
+margin-right: 30px;
+}
+.top-part-info p{
+    width: 505px;
+    margin-bottom: 2em;
+}
+
+.top-part-info a{
+    text-decoration: none;
+    background-color:  #E02C6D;
+    color: white;
+    border-radius: 41px;
+    padding: 10px 20px;
+}
+.top-part-img{
+    width: 440px;
+    height: 414px;
+    left: 835px;
+    top: 200px;
+}
+.top-part-img:hover {
+    transform: skew(180deg);
+            transition: transform 2s ease-in-out;
+}
+/* second part */
+.second-header{
+    text-align:center;
+    padding-left: 60px;
+   
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   padding-left: 50px;
+    grid-row-gap:30px;
+    grid-column-gap: 30px;
+    
+}
+.collection{
+    width: 300px;
+    height: 480px;
+    padding-top:17px;
+    padding-left:14px;
+    padding-right:14px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    
+}
+.collection h2{
+    margin-bottom: 10px;
+}
+.collection p{
+    margin-top: 0;
+}
+.price{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+   
+}
+.fa-star{
+    color:green;
+}
+.see-more  {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+}
+.see-more a{
+    text-decoration: none;
+    color:green;
+}
+
+/* Bonus part starts */
+.bonus-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bonus-detail{
+    width: 60%;
+}
+.bonus-detail a{
+    text-decoration: none;
+    background-color:  #E02C6D;
+    color: white;
+    border-radius: 41px;
+    padding: 10px;
+}
+.bonus-image{
+    width: 70%;
+    padding-left: 8vh;
+}
+
+/* footer starts */
+footer{
+   padding-top: 20px;
+   padding-bottom: 25px;
+    background-color: black;
+    text-align: center;
+        
+}
+
+footer h2{
+    color: white;
+}
+.fab{
+    margin-right: 10px;
+}
+/* responsive part for mobile devices starts */
+@media only screen and (max-width:688px){
+     
+    main{
+        margin-left: 10vh;
+        margin-right: 10vh;
+        }
+   
+    .flexible{
+        display: block;
+       
+    }
+    .top-part-info h1{
+        width: 60vh;
+        text-align: center;
+    }
+    .top-part-info p{
+        width: 60vh;
+        text-align: center;
+    }
+    .top-part-info a{
+      margin-left: 40px;  
+    }
+    .second-header, .bonus-head{
+        text-align: left;
+    }
+    
+    .collections {    
+        grid-template-columns: repeat(1,1fr);
+        padding:0;
+        margin: 0;
+    }
+    .bonus-head{
+        margin-left: 70px;
+    }
+    .bonus-detail{
+        width: 60vh;
+    }
+    .bonus-detail a{
+        margin-left: 70px;
+    }
+    .bonus-image img{
+        margin-top: 5vh;
+        width: 350px;
+    }
+    }
+/* responsive part for tablet devices starts */
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        .container{
+            width: 100%;
+        }
+        main{
+            margin-left: 10vh;
+            margin-right: 10vh;
+            }
+            header{
+                width:100vh;
+                text-align: center;
+            }
+       
+        .flexible{
+            display: block;
+           
+        }
+        .top-part-info{
+            width: 100%;
+        }
+        .top-part-info h1{
+            width: 120vh;
+            text-align:center;
+        }
+        .top-part-info p{
+            width: 100vh;
+            text-align: center;
+        }
+        .top-part-info a{
+          margin-left: 200px; 
+        }
+        .top-part-img{
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .second-header, .bonus-head{
+            text-align: center;
+        }
+        
+        .collections {    
+            grid-template-columns: repeat(2,1fr);
+            padding:0;
+            margin: 0;
+        }
+        .bonus-head{
+            margin-left: 70px;
+        }
+        .bonus-detail{
+            width: 100vh;
+            text-align: center;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+        .bonus-image img{
+            margin-left: 150px;
+            margin-top: 5vh;
+            width: 350px;
+        }
+        }
